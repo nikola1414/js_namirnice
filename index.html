@@ -1,0 +1,33 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" class="css">
+</head>
+<body>
+    <div style="display: flex;flex-direction: row; ">
+    <h6 style="padding: 5px;">Lista za kupovinu</h6>
+    <h6 style="padding: 5px; margin-left: 40px;">Kupljeno</h6>
+    </div>
+    <ul>
+        <li>
+            <select id="select1" name="select1" multiple>
+                <option>Hleb</option>
+                <option>Jaja</option>
+                <option>Mleko</option>
+                <option>Jogurt</option>
+            </select>
+        </li>
+        <li class="relative">
+            <input  type="button" id="add" value="&#8702;" onclick="addOptions( 'select1', 'select2' )" />
+            <input  type="button" id="remove" value="&#8701;" onclick="addOptions( 'select2', 'select1' )" />
+        </li>
+        <li>
+            <select id="select2" name="select2" multiple></select>
+        </li>
+    </ul>
+    <script src="func.js"></script>
+</body>
+</html>

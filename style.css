@@ -1,0 +1,26 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 70px 40px 70px;
+    grid-gap: 10px
+}
+select {
+    width: 70px
+}
+li.relative {
+    position: relative
+}
+#add {
+    position: absolute;
+    width: 40px;
+    font-size: 18px;
+    top: 0
+}
+#remove {
+    position: absolute;
+    width: 40px;
+    font-size: 18px;
+    bottom: 0
+}
